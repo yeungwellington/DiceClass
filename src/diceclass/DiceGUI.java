@@ -43,25 +43,24 @@ public class DiceGUI extends javax.swing.JFrame {
 
         lblDie.setText("0");
 
+        lblName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblName.setText("Zero");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(154, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnGenerate)
-                        .addGap(147, 147, 147))
+                        .addComponent(lblDie)
+                        .addGap(182, 182, 182))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblName)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblDie)
-                                .addGap(10, 10, 10)))
-                        .addGap(172, 172, 172))))
+                            .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnGenerate))
+                        .addGap(147, 147, 147))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
